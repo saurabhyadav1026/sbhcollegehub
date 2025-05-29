@@ -10,7 +10,7 @@ function App() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get('https://sbhcollegehub.onrender.com/api/users')
+    axios.get(`${process.env.REACT_APP_API_URL}/api/users`)
       .then(res => setUsers(res.data))
       .catch(err => console.error(err));
 
