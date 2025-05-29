@@ -1,7 +1,7 @@
 const getUsers=(req,res)=>{
     res.json([
-        {name:"saurabh"},
-        {name:"himanshu"}
+        {name:'saurabh'},
+        {name:'himanshu'}
     ])
 }
 
