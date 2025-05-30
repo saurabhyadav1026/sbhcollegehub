@@ -20,7 +20,8 @@ function App() {
 
         <h1>User List</h1>
         {
-            users.length > 0 ? (users.map((u, index) =><p key={index}>{u.name}</p>))
+i bhai");
+th > 0 ? (users.map((u, index) =><p key={index}>{u.name}</p>))
             : (<p> Loading Users....</p>)
             
         }
