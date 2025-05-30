@@ -36,7 +36,7 @@ app.listen(PORT, () => {
 
 
 import express from "express";
-import mongoose from "mongoose";
+import connectdb from "./config/db.js";
 import cors from "cors";
 import dotenv from "dotenv";
 import userRoutes from "./routes/userRoutes.js";
@@ -54,9 +54,4 @@ app.use(express.json());
 app.use("/api/users", userRoutes);
 
 // MongoDB connection
-mongoose.connect(process.env.MONGO_URI)
-  .then(() => {
-    console.log("MongoDB connected");
-    app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-  })
-  .catch(err => console.error("MongoDB error:", err));
+connectdb();
