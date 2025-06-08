@@ -1,10 +1,15 @@
-const mongoose = require('mongoose');
-//require('dotenv').config(); // Load .env file
+import mongoose from 'mongoose';
+
+
+
+import dotenv from 'dotenv';
+dotenv.config(); // Load .env file
 
 const connectDB = async () => {
   try {
     //const uri = process.env.MONGO_URI;
-    await mongoose.connect(process.env.MONGO_URI, {
+
+    await mongoose.connect(process.env.MONGO_URI , {
      useNewUrlParser: true,
       useUnifiedTopology: true,
       dbName:'sbhcollegehub'
@@ -16,4 +21,4 @@ const connectDB = async () => {
   }
 };
 
-module.exports = connectDB;
+export default connectDB;

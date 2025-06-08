@@ -31,12 +31,11 @@ export default App;
  */
 
 
-
 import React, { useEffect, useState } from "react";
 import UserForm from "./components/UserForm";
 import UserList from "./components/UserList.js";
 
-const API_URL = "https://sbhcollegehub.onrender.com/api/users"; // 👈 Replace this
+const API_URL=process.env.API_URL ; 
 
 function App() {
   const [users, setUsers] = useState([]);
