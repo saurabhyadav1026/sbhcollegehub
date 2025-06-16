@@ -48,7 +48,7 @@ function App() {
 const x="sbh";
   return (
     <div className="container">
-      <h1>User Management by sbh</h1>
+      <h1>User Management by sbh {API_URL}</h1>
       <UserForm addUser={addUser} updateUser={updateUser} editingUser={editingUser} />
       <UserList users={users} deleteUser={deleteUser} setEditingUser={setEditingUser} />
     </div>
