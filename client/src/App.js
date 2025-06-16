@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import UserForm from "./components/UserForm";
 import UserList from "./components/UserList.js";
 
-const API_URL=process.env.REACT_APP_API_URL ; 
+const API_URL=process.env.REACT_APP_API_URL+"/api/users" ; 
 
 function App() {
   const [users, setUsers] = useState([]);
