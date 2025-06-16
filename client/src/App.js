@@ -45,7 +45,7 @@ function App() {
     });
     fetchUsers();
   };
-const x="sbh";
+
   return (
     <div className="container">
       <h1>User Management by sbh {API_URL}</h1>
