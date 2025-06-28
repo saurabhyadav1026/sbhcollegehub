@@ -23,8 +23,6 @@ dotenv.config();
   const uri=process.env.MONGO_URI
   console.log(uri);
   mangoose.connect(uri,{
-    useNewUrlParser: true,
-     useUnifiedTopology: true,
      dbName:'sbhcollegehub'
    });
 console.log("db connected by sbh");
